@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> JavaScript Introduction </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> JavaScript to change CSS Style </h1>
+<pre id="css">
+Hello!
+I
+Am 
+Nishkarsh.
+This
+is 
+a
+block
+element.
+</pre>
+<button onclick="Nish()"> Format Paragraph. </button>
+<script>
+function Nish()
+{
+//Always specify all CSS Style options in one line else only last one is chosen
+document.getElementById("css").style = "color:white;background-color:black;margin:auto;outline:2px solid black;outline-offset:4px;padding:20px;border:2px solid red;";
+}
+</script>
+</body>
+</html>
