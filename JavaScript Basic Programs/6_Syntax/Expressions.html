@@ -6,10 +6,15 @@
 </head>
 <body style="background-color:lightblue;">
 <h1 style="text-align:center;">Expressions </h1>
-<pre id="el">
+<p id="el">
 Lets Calculate: (10+(5*4)*3)
-</pre>
-<button onclick="Nish()"> Evaluation Button</button>
-<script src="ex.js"> </script>
+</p>
+<button onclick="f1()"> Evaluation Button</button>
+<script>
+function f1()
+{
+document.getElementById("el").innerHTML= (10+(5*4)*3);
+}
+</script>
 </body>
 </html>
