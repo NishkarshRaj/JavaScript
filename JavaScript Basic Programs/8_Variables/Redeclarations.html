@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Variables </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Redeclaration of Variables </h1>
+<pre id="el">
+Redeclarations are not allowed in programming languages that we have generally learnt.
+But they are allowed in JS.
+If they were previously declared and had been assigned a value then it is retained.
+</pre>
+<button onclick="nish()"> Click Me! </button>
+<script>
+function nish()
+{
+var x = 41;
+x = x * 2;
+var x;
+x = x/4;
+document.getElementById("el").innerHTML = x;
+}
+</script>
+</body>
+</html>
