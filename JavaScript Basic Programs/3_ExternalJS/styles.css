@@ -1,0 +1,23 @@
+h1
+{
+text-align:center;
+}
+body
+{
+background-color:lightblue;
+}
+pre
+{
+background-color:black;
+color:white;
+border:2px solid white;
+padding: 30px
+margin:auto;
+outline:2px solid black;
+outline-offset:3px;
+}
+button
+{
+background-color:pink;
+margin:auto;
+}
