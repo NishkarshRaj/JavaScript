@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> JavaScript Introduction </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Using JS to change content of the HTML Element </h1>
+<pre id="content">
+One of many JavaScript HTML methods is getElementById().
+
+This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript"
+JavaScript accepts both double and single quotes
+</pre>
+<button id="button" onclick="Nish()"> Click to change the content </button>
+<script>
+function Nish()
+{
+document.getElementById("content").innerHTML="Using JS To change the content :D";
+document.getElementById("button").innerHTML="Click to undo";
+//use if else to be learned later to do the undo work
+}
+</script>
+</body>
+</html>
