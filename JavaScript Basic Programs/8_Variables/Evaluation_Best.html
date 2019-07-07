@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Variables </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Best Case of Output Evaluation Expressions </h1>
+<pre>
+Evaluation of string and numbers is like that
+<mark><b>After</b></mark> first string element all numbers are considered as string and concatenated.
+</pre>
+<pre id="el1">
+5 + 2 + "3"
+</pre>
+<pre id="el2">
+5 + "2" + 3
+</pre>
+<pre id="el3">
+"5" + 2 + 3 
+</pre>
+<button onclick="nish()"> Click Me! </button>
+<script>
+function nish()
+{
+document.getElementById("el1").innerHTML = 5 + 2 + "3";
+document.getElementById("el2").innerHTML = 5 + "2" + 3;
+document.getElementById("el3").innerHTML = "5" + 2 + 3;
+}
+</script>
+</body>
+</html>
