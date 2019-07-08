@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Function</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Returning Variables</h1>
+<pre> Call By Value is Default here!!</pre>
+<script>
+var p1,p2;
+function nish(p1,p2)
+{
+p1++;
+p2--;
+return p1+p2;
+}
+p1 = 4;
+p2 = 6;
+document.write(p1 + " ");
+document.write(p2 + " ");
+document.write(nish(p1,p2) + " ");
+document.write(p1 + " ");
+document.write(p2 + " ");
+</script>
+</body>
+</html>
