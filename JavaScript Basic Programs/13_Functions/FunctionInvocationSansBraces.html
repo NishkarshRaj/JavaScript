@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Function</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Invoking Function without () </h1>
+<pre id="el">
+Calling a function without () => We are calling the <mark>function definition</mark> rather than the <mark>function value</mark>.
+</pre>
+<button onclick="nish()"> Click Me! </button>
+<script>
+function wish()
+{
+document.write("Hello!!!");
+}
+function nish()
+{
+document.getElementById("el").innerHTML = "Hello World!" + wish; //rather than wish()
+}
+</script>
+</body>
+</html>
