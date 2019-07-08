@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Objects </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Primitive Data Type Objects</h1>
+<pre>
+Creating variables of primitive type using new keyword is valid but not advised.
+It overrides the default value on creation.
+Type is always Object.
+
+Default Values which are generally "undefined" are changed to:
+Number: 0
+String: "" (Empty)
+Boolean: false
+</pre>
+<script>
+var num = new Number(); //Note that type of DT is Number with cap N.
+var str = new String();
+var bool = new Boolean();
+document.write(num + " " + typeof(num));
+document.write(str + " " + typeof(str));
+document.write(bool + " " + typeof(bool));
+</script>
+</body>
+</html>
