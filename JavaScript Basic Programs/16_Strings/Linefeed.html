@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Strings</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Linefeed in strings!!</h1>
+<pre>
+Breaking Concepts!
+JavaScript adding content or replacing content is allowed.
+But the content belongs to HTML Tags!!
+HTML tags do not understand \n linefeed but they understand the break line tag.
+Thus you need break line tag for line breaks.
+</pre>
+<script>
+var str = "Hello I need linefeed\n";
+document.write(str);
+var str1 ="Hello I need linefeed<br>"; //Do not add line feed inside string but do as next line
+document.write(str1 + "<br>");
+var str2 ="Is there a line feed??";
+document.write(str2);
+</script>
+</body>
+</html>
