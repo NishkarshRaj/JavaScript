@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Objects </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">General Class</h1>
+<pre>
+We have seen creation of Objects.
+But we have never created the Template Class till now.
+Are they even present in JS???
+Let's check if we can create a object using an already created object using new keyword here.
+Note: We are assuming that the objects we create are classes with constructors initializing their values.
+
+PS: It's not working :(
+</pre>
+<script>
+//Creating General Object as a Class
+var cls = 
+{
+name : "sfs",
+age : 25
+};
+document.write(cls.name + " " + cls.age);
+var obj = new cls();
+document.write(obj.name + " " + obj.age);
+obj.name = "Nishkarsh";
+obj.age = 20;
+document.write("Hello ");
+document.write(obj.name + " " + obj.age);
+</script>
+</body>
+</html>
