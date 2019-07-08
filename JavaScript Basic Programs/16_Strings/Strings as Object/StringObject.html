@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Strings</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">String Objects</h1>
+<pre>
+Normally, JavaScript strings are primitive values, created from literals:
+
+var firstName = "John";
+
+But strings can also be defined as objects with the keyword new:
+
+var firstName = new String("John");
+Don't create strings as objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected resultsNote the difference between (x==y) and (x===y).
+Comparing two JavaScript objects will always return false.
+
+<mark>
+Three reasons never to use String Objects:
+1) Increases Complexity
+2) Slows down speed
+3) Incomparable strings even if they are same because belong to different object.
+</mark>
+</pre>
+</body>
+</html>
