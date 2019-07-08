@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Data Types</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Null versus undefined</h1>
+<ol>
+<li> Type: Null is object while undefined is of undefined type</li>
+<li> Class: Null is complex Data Type while Undefined is primitive</li>
+<li> Their values are same.</li>
+</ol>
+<pre>
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+
+Unfortunately, in JavaScript, the data type of null is an object.
+
+You can consider it a bug in JavaScript that typeof null is an object. It should be null.
+
+You can empty an object by setting it to null.
+You can also empty an object by setting it to undefined.
+</pre>
+<script>
+var x=undefined;
+var y =null;
+document.write(x==y);
+document.write(x===y);
+</script>
+</body>
+</html>
