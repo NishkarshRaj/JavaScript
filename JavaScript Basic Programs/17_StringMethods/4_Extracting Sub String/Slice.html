@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Slice Method </h1>
+<pre>
+slice() extracts a part of a string and returns the extracted part in a new string.
+
+The method takes 2 parameters: the start position, and the end position (end not included).
+Thus if slice(start,end) is specified
+Then string is sliced from start index (not position) to (end-1) index.
+
+Remember: JavaScript counts positions from zero. First position is 0.
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+// I want to extract Raj 
+//Starts with 10th index and is 3 character long so end must be 10+4 = 14
+var str1 = str.slice(10,14);
+document.write(str1);
+</script>
+</body>
+</html>
