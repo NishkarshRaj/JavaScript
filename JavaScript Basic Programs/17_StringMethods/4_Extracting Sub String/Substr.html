@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> substr() method </h1>
+<pre>
+substr() is similar to slice().
+
+The difference is that the second parameter specifies the length of the extracted part.
+If you omit the second parameter, substr() will slice out the rest of the string.
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+var str1 = str.substr(10,3);
+var str2 = str.substr(10);
+document.write((str1) + "<br>" + (str2));
+</script>
+</body>
+</html>
