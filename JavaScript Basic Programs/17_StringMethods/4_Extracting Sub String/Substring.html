@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Substring Method</h1>
+<pre>
+substring() is similar to slice().
+
+The difference is that substring() cannot accept negative indexes.
+If you omit the second parameter, substring() will slice out the rest of the string.
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+var str1 = str.substring(10,14);
+var str2 = str.substring(10);
+document.write((str1) + "<br>" + (str2));
+</script>
+</body>
+</html>
