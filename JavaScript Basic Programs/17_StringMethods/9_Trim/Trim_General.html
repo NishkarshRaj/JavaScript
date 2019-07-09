@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String Methods</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Generalized Trim Method</h1>
+<pre>
+The trim() method is not supported in Internet Explorer 8 or lower.
+
+If you need to support IE 8, you can use replace() with a regular expression instead
+
+str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '')
+
+<mark>This method is supported on all web platforms </mark>
+</pre>
+<script>
+var str = "            Nishkarsh   Raj            Khare                 ";
+var str1 = str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+document.write(str1);
+</script>
+</body>
+</html>
