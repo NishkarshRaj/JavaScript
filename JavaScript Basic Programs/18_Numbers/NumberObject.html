@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Numbers in JS</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Number as Object </h1>
+<pre>
+Normally JavaScript numbers are primitive values created from literals:
+
+var x = 123;
+
+But numbers can also be defined as objects with the keyword new:
+
+var y = new Number(123);
+
+Do not create Number objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected results:
+
+When using the == operator, equal numbers are equal
+When using the === operator, equal numbers are not equal, because the === operator expects equality in both type and value.
+</pre>
+<script>
+var x = 41;
+var y = new Number(41);
+document.write((x==y) + "<br>" + (x===y));
+</script>
+</body>
+</html>
