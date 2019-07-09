@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Number Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> toFixed() method</h1>
+<pre>
+<mark>Its basic work is to specify the number of digits after decimal point. </mark>
+toFixed() returns a string, with the number written with a specified number of decimals
+</pre>
+<script>
+var x = 3.141526; //value of Pi btw :D
+document.write((x.toFixed(0)) + "<br>");
+document.write((x.toFixed(2)) + "<br>");
+document.write((x.toFixed(4)) + "<br>");
+document.write((x.toFixed(6)) + "<br>");
+document.write((x.toFixed()) + "<br>"); //No argument means 0 decimal places
+</script>
+</body>
+</html>
