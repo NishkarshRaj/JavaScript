@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Associative Arrays </h1>
+<pre>
+Many programming languages support arrays with named indexes.
+
+Arrays with named indexes are called associative arrays (or hashes).
+
+JavaScript does not support arrays with named indexes.
+
+In JavaScript, arrays always use numbered indexes.  
+
+WARNING !!
+If you use named indexes, JavaScript will redefine the array to a standard object.
+After that, some array methods and properties will produce incorrect results.
+</pre>
+<script>
+var arr = []; //valid declaration of array when empty array at start
+arr["name"] = "Nishkarsh"; //Using names rather than index as in objects
+document.write(arr.length + "<br>" + arr[0] + "<br>" + arr["name"]); //+ "<br>" + arr); this wont print anything
+</script>
+</body>
+</html>
