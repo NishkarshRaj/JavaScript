@@ -7,10 +7,23 @@
 <body style="background-color:lightblue;">
 <h1 style="text-align:center;"> Strings </h1>
 <pre>
+<mark>String Methods and Properties</mark>
+
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, 
+because JavaScript treats primitive values as objects when executing methods and properties.
+
+Thus, String methods are applicable basically for String Objects but are allowed to work on Primitive Strings as well.
+As shown in example below, the methods convert String to object to work on them but return String type only.
+
 All string methods return a new string. They don't modify the original string.
 Formally said: Strings are immutable: Strings cannot be changed, only replaced. 
 </pre>
 <script>
+var str="Nishkarsh";
+var str1 = str.toUpperCase();
+document.write((str1) + "<br>" + typeof(str1));
 </script>
 </body>
 </html>
