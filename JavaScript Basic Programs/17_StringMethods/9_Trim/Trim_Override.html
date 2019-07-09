@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String Methods</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Overriding Trim Utility with Replace </h1>
+<pre>
+Creating a Trim() function in String.prototype to override String.trim().
+For overriding function, we use replace() method to generalize the trim.
+</pre>
+<script>
+if (!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+  };
+}
+var str = "            Nishkarsh   Raj            Khare                 ";
+var str1 = str.trim();
+document.write(str1);
+</script>
+</body>
+</html>
