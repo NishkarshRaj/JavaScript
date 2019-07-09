@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> substr() with negative parameter</h1>
+<pre>
+When Substr() method has first parameter as negative, Second parameter, if present does not matter.
+It extracts string from -pos to end of string always.
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+var str1 = str.substr(-5,10);
+var str2 = str.substr(-5);
+document.write((str1) + "<br>" + (str2));
+</script>
+</body>
+</html>
