@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Using forEach() methods for iteration</h1>
+<pre>
+Creating HTML Lists for output
+</pre>
+<script>
+var arr = ["Nishkarsh","Raj","Khare"];
+var out;
+out = "<ol>";
+arr.forEach(fun); 
+function fun(value)
+{
+//document.write(value + "<br>");
+out = out + "<li>" + value + "</li>";
+}
+out = out + "</ol>";
+document.write(out);
+</script>
+</body>
+</html>
