@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String Methods</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;"> Case Sensitivity Solved</h1>
+<pre>
+Case Sensitivy matters for replace string.
+But it can be overridden using Regular Expressions.
+
+<mark>Regular Expressions are written without "<content>" and as /<content>/(re_Flag)
+</mark>
+</pre>
+<script>
+var str = "One Two CHa Cha Cha";
+var str1 = str.replace(/Cha/i,"Hello");
+document.write((str) + "<br>" + (str1));
+</script>
+</body>
+</html>
