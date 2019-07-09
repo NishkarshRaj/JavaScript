@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Negative Slicing </h1>
+<pre>
+If a parameter is negative, the position is counted from the end of the string.
+It extracts from back to front.
+
+The Start is -(index of first extraction letter when index starts from zero at right) and same is End.
+In positive slicing, we were giving end = endindex + 1
+In negative slicing, we give start = startindex - 1;
+
+So For 
+N
+i
+s
+h
+k
+a
+r
+s
+h
+  -9
+r -8
+a -7
+j -6
+  -5
+k -4
+h -3
+a -2
+r -1
+e 0
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+var str1 = str.slice(-9,-6);
+document.write(str1);
+</script>
+</body>
+</html>
