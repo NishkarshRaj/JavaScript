@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Ignore new Keyword</h1>
+<pre>
+There is no need to use the JavaScript's built-in array constructor new Array().
+
+Use [] instead.
+
+These two different statements both create a new empty array named points:
+var points = new Array();     // Bad
+var points = [];              // Good 
+
+The new keyword only complicates the code. It can also produce some unexpected results like below:
+</pre>
+<script>
+var arr = new Array(30);
+/* Expected: Array with 1 element 30
+Output: Array with 30 undefined elements */
+document.write(arr);
+</script>
+</body>
+</html>
