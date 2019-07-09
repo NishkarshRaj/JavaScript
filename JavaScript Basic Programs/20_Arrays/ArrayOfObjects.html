@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Objects as Array Elements</h1>
+<pre>
+JavaScript variables can be objects. Arrays are special kinds of objects.
+
+Because of this, you can have variables of different types in the same Array.
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array
+</pre>
+<script>
+function nish()
+{
+return "Function";
+}
+var str = new String("Nishkarsh Raj Khare"); //String Object
+var num = new Number(41); //Number Object
+var bool = new Boolean(true); //Boolean Object
+var arr = [1,2,3,4,5]; //Array Object
+var n = null; //Null object
+var fun = nish; //Function object returning definition
+var obj = {Age:20,Branch:"DevOps"}; //Objects
+//Creating Array of Objects
+var out = [str,num,bool,arr,n,obj,fun];
+document.write(out);
+</script>
+</body>
+</html>
