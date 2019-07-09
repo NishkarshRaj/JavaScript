@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Number Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Number Method</h1>
+<pre id="el">
+Number() can be used to convert JavaScript variables to numbers.
+If the number cannot be converted, NaN (Not a Number) is returned.
+</pre>
+<button onclick="nish()"> Click Me </button>
+<script>
+function nish()
+{
+document.getElementById("el").innerHTML = 
+  Number(true) + "<br>" +
+  Number(false) + "<br>" +
+  Number("10") + "<br>" + 
+  Number("  10") + "<br>" +
+  Number("10  ") + "<br>" +
+  Number(" 10  ") + "<br>" +
+  Number("10.33") + "<br>" + 
+  Number("10,33") + "<br>" +
+  Number("10 33") + "<br>" +
+  Number("John");
+  //Space is not allowed within numbers as in second last example.
+}
+</script>
+</body>
+</html>
