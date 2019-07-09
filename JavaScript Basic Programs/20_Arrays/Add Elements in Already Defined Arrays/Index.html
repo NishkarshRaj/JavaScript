@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center">Insertion using Indexes </h1>
+<pre>
+When array elements are modified using index:
+* It replaces the already present elements on index if any
+* It creates new array element if not defined earlier and fills the gap with undefined elements
+Adding elements with high indexes can create undefined "holes" in an array
+
+<mark>Here, we just print normal array by array name so it will print elements undefined as ,,
+But when iterated, it will print undefined.
+</mark>
+</pre>
+<script>
+var arr = ["One","Two"];
+arr[10] = "Three";
+document.write(arr);
+</script>
+</body>
+</html>
