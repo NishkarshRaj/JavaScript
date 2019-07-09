@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String Methods</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Converting String To Arrays </h1>
+<pre>
+A string can be converted to an array with the split() method
+
+If the separator is omitted, the returned array will contain the whole string in index [0].
+
+If the separator is "", the returned array will be an array of single characters.
+
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+document.write((str) + "<br>" + (typeof(str)) + "<br>");
+var str1 = str.split(); //general split => Entire String at arr[0]
+document.write((str1) + "<br>" + (typeof(str1)) + "<br>");
+var str2 = str.split(" "); //Array of Words
+document.write((str2) + "<br>" + (typeof(str2)) + "<br>");
+var str3 = str.split(""); //Array of characters
+document.write((str3) + "<br>" + (typeof(str3)) + "<br>");
+</script>
+</body>
+</html>
