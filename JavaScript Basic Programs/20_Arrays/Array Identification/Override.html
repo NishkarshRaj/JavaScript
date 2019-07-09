@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Generalized isArray() method</h1>
+<pre>
+Overriding the isArray() method (to be called without Array class wrapper) so that it becomes browser independent.
+
+function isArray(myArray) 
+{
+  return myArray.constructor.toString().indexOf("Array") > -1;
+}
+</pre>
+<script>
+var arr = ["Nishkarsh","Raj"]; //Array
+var arr1 = []; //Lets do something interesting
+arr1["name"] = "Nishkarsh Raj"; //Lets find what type is this!! :D
+var obj = {name:"Nishkarsh Raj"};
+function isArray(myArray) 
+{
+  return myArray.constructor.toString().indexOf("Array") > -1;
+}
+document.write((isArray(arr)) + "<br>" + (isArray(arr1)) + "<br>" + (isArray(obj)));
+</script>
+</body>
+</html>
