@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>String Methods</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center;">Property Access Unpredictability</h1>
+<pre>
+<mark> String are Immutable and thus even though we can access their character by [] we cannot modify it.</mark>
+
+
+
+Property access might be a little unpredictable:
+
+    It does not work in Internet Explorer 7 or earlier
+    It makes strings look like arrays (but they are not)
+    If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+    It is read only. str[0] = "A" gives no error (but does not work!)
+
+</pre>
+<script>
+var str = "Nishkarsh Raj Khare";
+str[10] = "A";
+document.write(str);
+</script>
+</body>
+</html>
