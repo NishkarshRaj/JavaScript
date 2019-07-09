@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Number Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> toExponential() method</h1>
+<pre>
+toExponential() returns a string, with a number rounded and written using exponential notation.
+
+A parameter defines the number of characters behind the decimal point
+The parameter is optional. If you don't specify it, JavaScript will not round the number.
+</pre>
+<script>
+var c = 299792458; //speed of sound btw :D
+document.write((c.toExponential()) + "<br>");
+document.write((c.toExponential(2)) + "<br>");
+document.write((c.toExponential(4)) + "<br>");
+document.write((c.toExponential(6)) + "<br>");
+document.write((c.toExponential(1)) + "<br>");
+</script>
+</body>
+</html>
