@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Number Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> toString() method</h1>
+<pre>
+We know,
+toString() is used to change method's base.
+But its most basic usage without parameter is to convert a number type variable to a string type variable.
+
+The toString() method returns a number as a string.
+
+All number methods can be used on any type of numbers (literals, variables, or expressions)
+
+<mark>As this example shows, numbers can be treated as mutable. 
+x = x.toString() works. </mark>
+</pre>
+<script>
+var x = 41;
+document.write(typeof(x) + "<br>");
+//document.write(typeof(x.toString()) + "<br>");
+//Checking If Numbers are immutable!
+x = x.toString();
+document.write(typeof(x) + "<br>"); //works
+</script>
+</body>
+</html>
