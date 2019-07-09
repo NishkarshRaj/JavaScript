@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Arrays </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Array.isArray() method </h1>
+<pre>
+A common question is: How do I know if a variable is an array?
+
+The problem is that the JavaScript operator typeof returns "object
+
+The typeof operator returns object because a JavaScript array is an object. 
+
+To solve this problem ECMAScript 5 defines a new method Array.isArray()
+The problem with this solution is that ECMAScript 5 is not supported in older browsers.
+</pre>
+<script>
+var arr = [14,25];
+var obj = {name:"Nishkarsh"};
+document.write(Array.isArray(arr));
+document.write("<br>" + Array.isArray(obj));
+</script>
+</body>
+</html>
