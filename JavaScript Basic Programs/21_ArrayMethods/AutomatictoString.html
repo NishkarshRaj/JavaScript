@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Automatic toString()</h1>
+<pre id="el">
+JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+
+This is always the case when you try to output an array.
+
+Thus, if we try to print an array to HTML element, it won't happen because HTML only recognizes strings.
+Thus, all elements and data types in JS have a toString() method which is automatically invoked when writing the value in HTML Element. 
+</pre>
+<button onclick="nish()">Click Me!</button>
+<script>
+function nish()
+{
+document.getElementById("el").innerHTML = ["Nishkarsh","Raj","Khare"] //will also work due to automatic invocation
+document.getElementById("el").innerHTML = ["Nishkarsh","Raj","Khare"].toString();
+}
+</script>
+</body>
+</html>
