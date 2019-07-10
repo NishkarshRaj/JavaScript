@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Shift Method shift()</h1>
+<pre>
+Shifting is equivalent to popping, working on the first element instead of the last.
+
+The shift() method removes the first array element and "shifts" all other elements to a lower index.
+The shift() method returns the string that was "shifted out".
+
+<mark>Thus, shifting and unshifting are push and pop on stack but with top at the first element.
+</pre>
+<script>
+var arr = ["Remove this","Nishkarsh","Raj","Khare"];
+document.write("Original Array: " + arr + "<br>");
+var out = arr.shift(); //returns first element popped
+document.write("Modified Array: " + arr + "<br>");
+document.write("Shifted element: " + out + "<br>");
+</script>
+</body>
+</html>
