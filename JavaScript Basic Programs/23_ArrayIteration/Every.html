@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> every() method</h1>
+<pre>
+When a callback function uses the first parameter only (value), the other parameters can be omitted.
+
+Array.every() is supported in all browsers except Internet Explorer 8 or earlier.
+</pre>
+<script>
+var arr = [31,41,51,55,45];
+var out = arr.every(fun);
+function fun(value)
+{
+return (value%2==1);
+}
+document.write(out);
+</script>
+</body>
+</html>
