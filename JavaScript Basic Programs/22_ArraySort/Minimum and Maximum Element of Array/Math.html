@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Using Math library</h1>
+<pre>
+<mark>Using Math.max() on an Array</mark>
+
+You can use Math.max.apply to find the highest number in an array
+Math.max.apply(null, [1, 2, 3]) is equivalent to Math.max(1, 2, 3)
+
+<mark>Using Math.min() on an Array</mark>
+
+You can use Math.min.apply to find the lowest number in an array
+Math.min.apply(null, [1, 2, 3]) is equivalent to Math.min(1, 2, 3).
+</pre>
+<script>
+var arr = [5,23,5322,4,634,24,473,2146,53];
+document.write("Maximum Element: " + Math.max.apply(null,arr) + "<br>");
+document.write("Minimum Element: " + Math.min.apply(null,arr) + "<br>");
+</script>
+</body>
+</html>
