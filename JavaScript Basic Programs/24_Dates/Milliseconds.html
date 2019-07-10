@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Dates in JS</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Milliseconds </h1>
+<pre>
+JavaScript Stores Dates as Milliseconds
+
+JavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).
+
+Zero time is January 01, 1970 00:00:00 UTC.
+
+Now the time is: 1562759487009 milliseconds past January 01, 1970
+
+new Date(milliseconds) creates a new date object as zero time plus milliseconds
+
+01 January 1970 plus 100 000 000 000 milliseconds is approximately 03 March 1973
+
+January 01 1970 minus 100 000 000 000 milliseconds is approximately October 31 1966.
+
+One day (24 hours) is 86 400 000 milliseconds.
+</pre>
+<script>
+var x = 13*1999;
+var dae = new Date(x);
+document.write(dae);
+</script>
+</body>
+</html>
