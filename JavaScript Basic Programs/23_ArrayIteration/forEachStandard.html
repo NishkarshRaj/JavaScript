@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Iteration</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> forEach() method</h1>
+<pre>
+forEach() method is used to access all elements of the Array one by one.
+
+The forEach() method calls a function (a callback function) once for each array element.
+
+Note that the function takes 3 arguments:
+
+    The item value
+    The item index
+    The array itself
+
+</pre>
+<script>
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>";
+}
+document.write(txt);
+</script>
+</body>
+</html>
