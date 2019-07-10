@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Iteration</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> forEach() method</h1>
+<pre>
+Array.forEach() is supported in all browsers except Internet Explorer 8 or earlier.
+
+When Index and Array name are not in use, we can also call the function using value only.
+</pre>
+<script>
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value) {
+  txt = txt + value + "<br>";
+}
+document.write(txt);
+</script>
+</body>
+</html>
