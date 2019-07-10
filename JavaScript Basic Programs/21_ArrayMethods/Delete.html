@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Delete Elements</h1>
+<pre>
+Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator/keyword delete.
+Using delete may leave undefined holes in the array. 
+Use pop() or shift() instead.
+
+<mark> Unlike pop() or shift(), it does not removes indexed element and reduces size of array but just replaces value with undefined.
+But one advantage is that pop or shift does not work in non-boundary elements.</mark>
+</pre>
+<script>
+var arr = [1,23,25,62,53];
+delete arr[2]; //25
+document.write(arr); //shows nothing until accessed by for loop then undefined.
+</script>
+</body>
+</html>
