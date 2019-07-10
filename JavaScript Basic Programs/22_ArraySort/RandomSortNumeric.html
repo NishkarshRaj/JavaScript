@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Random Sort on Numeric Array </h1>
+<pre>
+We use Math.random() function which generates values from 0-1.
+</pre>
+<script>
+arr = [2145,32,326,234,64,235,36];
+document.write(arr.sort(function(a,b){return 0.5-Math.random();}));
+</script>
+</body>
+</html>
