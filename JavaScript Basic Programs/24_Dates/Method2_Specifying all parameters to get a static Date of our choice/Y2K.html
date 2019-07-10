@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Dates in JS</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Y2K problem </h1>
+<pre>
+Previous Century
+
+One and two digit years will be interpreted as 19xx
+</pre>
+<script>
+var dae1 = new Date(99,0,13);
+var dae2 = new Date(9,0,13);
+document.write(dae1 + "<br>" + dae2);
+</script>
+</body>
+</html>
