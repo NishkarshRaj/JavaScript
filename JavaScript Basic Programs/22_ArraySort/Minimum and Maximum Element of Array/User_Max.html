@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> User Defined Function to find Maximum Element of Array </h1>
+<pre>
+</pre>
+<script>
+var arr = [25,253,632,243,347,23,85,15];
+function findmax(arr1)
+{
+var i;
+var max = -Infinity;
+for(i=0;i<arr1.length;i++)
+{
+if(max<arr1[i])
+{
+max = arr1[i];
+}
+}
+return max;
+}
+var max = findmax(arr);
+document.write(max);
+</script>
+</body>
+</html>
