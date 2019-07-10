@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Sorting on Basis of Numbers</h1>
+<pre>
+</pre>
+<script>
+var i;
+var cric = [
+{name:"Virat Kohli",age:30},
+{name:"MS Dhoni",age:37},
+{name:"Rahul Dravid",age:44}
+];
+//document.write(cric[0].name);
+cric.sort(function(a,b){return a.age-b.age;});
+document.write(cric[0].name + " " + cric[0].age + "<br>" +
+cric[1].name + " " + cric[1].age + "<br>" +
+cric[2].name + " " + cric[2].age + "<br>"
+);
+/*for(i=0;i<cric.length,i++)
+{
+document.write("Name: " + (cric[i].name)+ "<br>" + "Age: " + (cric[i].age) + "<br>");
+}*/
+</script>
+</body>
+</html>
