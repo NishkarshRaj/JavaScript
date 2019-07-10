@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Adding Elements using splice()</h1>
+<pre>
+<b> Syntax: arrayname.splice(index from which start insertion, 0 because no deletion, elements to be inserted); </b>
+
+Note: If index start = 2;
+Element at index 2 begins insertion point and previous arr[2] is shifted to right.
+</pre>
+<script>
+var arr = ["My","name","is","Khare"];
+document.write(arr + "<br>");
+arr.splice(3,0,"Nishkarsh","Raj");
+document.write(arr + "<br>");
+</script>
+</body>
+</html>
