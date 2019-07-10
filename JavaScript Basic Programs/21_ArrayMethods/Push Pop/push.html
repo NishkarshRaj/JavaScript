@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> push() method</h1>
+<pre>
+The push() method adds a new element to an array (at the end).
+
+The push() method returns the new array length.
+</pre>
+<script>
+var arr = ["Nishkarsh","Raj"];
+document.write("The original Array is: " + arr + "<br>");
+var out = arr.push("Khare"); //returns the length of new array
+document.write("The modified Array is: " + arr + "<br>");
+document.write("The length of array is: " + out + "<br>");
+var out = arr.push(); //Pushing nothing but checking what happens
+document.write("The modified Array is: " + arr + "<br>");
+document.write("The length of array is: " + out + "<br>");
+//Nothing happens on empty push
+</script>
+</body>
+</html>
