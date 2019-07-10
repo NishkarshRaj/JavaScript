@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> User Defined Function to find Minimum Element of Array </h1>
+<pre>
+</pre>
+<script>
+var arr = [25,253,632,243,347,23,85,15];
+function findmin(arr1)
+{
+var i;
+var min = Infinity;
+for(i=0;i<arr1.length;i++)
+{
+if(min>arr1[i])
+{
+min = arr1[i];
+}
+}
+return min;
+}
+var min = findmin(arr);
+document.write(min);
+</script>
+</body>
+</html>
