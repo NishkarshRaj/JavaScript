@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Reduce() method </h1>
+<pre>
+When the index and array parameters are not used, they can be ignored.
+</pre>
+<script>
+var arr = [1,2,3,4,5];
+var sum = arr.reduce(fun);
+function fun(total,value)
+{
+return total + value;
+}
+document.write("Average: " + (sum/arr.length));
+</script>
+</body>
+</html>
