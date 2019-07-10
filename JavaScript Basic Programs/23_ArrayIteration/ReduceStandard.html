@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Reduce() Standard method </h1>
+<pre>
+The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+
+The reduce() method works from left-to-right in the array. See also reduceRight().
+
+The reduce() method does not reduce the original array.
+
+Note that the function takes 4 arguments:
+
+    The total (the initial value / previously returned value)
+    The item value
+    The item index
+    The array itself
+
+<mark>reduce() is needed when an operation happens on all elements of array together to result in single value output
+Eg: Sum, average etc.
+Here we find the average :D 
+Note: total has a default value of 0.
+</pre>
+<script>
+var arr = [1,2,3,4,5];
+var sum = arr.reduce(fun);
+function fun(total,value,index,array)
+{
+return total + value;
+}
+document.write("Average: " + (sum/arr.length));
+</script>
+</body>
+</html>
