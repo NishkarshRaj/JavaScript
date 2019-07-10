@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Dates in JS</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Date() method</h1>
+<pre>
+By default, JavaScript will use the browser's time zone and display a date as a full text string:
+
+Wed Jul 10 2019 17:21:27 GMT+0530 (India Standard Time)
+
+You will learn much more about how to display dates, later in this tutorial.
+Creating Date Objects
+
+Date objects are created with the new Date() constructor.
+
+There are 4 ways to create a new date object:
+1) new Date()
+
+2) new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+Note: This method can have reduced number of parameters but only trailing parameters are allowed to be removed.
+Also, if only one parameter, next Date() format is selected.
+
+3) new Date(milliseconds)
+
+4) new Date(date string)
+<hr>
+
+new Date()
+
+new Date() creates a new date object with the current date and time:
+Date objects are static. The computer time is ticking, but date objects are not.
+</pre>
+<script>
+//document.write(Date());
+var d = new Date();
+document.write(d);
+</script>
+</body>
+</html>
