@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> every() Standard method</h1>
+<pre>
+<mark>The every() method check if all array values pass a test.
+If all values pass the test. true is returned else false is returned.
+Hence, the result returned is a boolean value.
+
+Syntax: return condition;
+</mark>
+Note that the function takes 3 arguments:
+
+    The item value
+    The item index
+    The array itself
+
+Checking: If an array is entirely odd or not.
+</pre>
+<script>
+var arr = [31,41,51,55,45];
+var out = arr.every(fun);
+function fun(value,index,array)
+{
+return (value%2==1);
+}
+document.write(out);
+</script>
+</body>
+</html>
