@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Methods </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Slicing to display sub array</h1>
+<pre>
+<b>Syntax: arrayname.slice(start,end);</b>
+Displays array from start index to end-1 index
+</pre>
+<script>
+var arr = [1,2,3,4,5,6,7,8,9];
+var out1 = arr.slice(3,6); //will display arr[3] to arr[5] which is 4 5 6
+var out2 = arr.slice(3,15); //overflow but will only show till end of array
+document.write(arr + "<br>" + out1 + "<br>" + out2); 
+</script>
+</body>
+</html>
