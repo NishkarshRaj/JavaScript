@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center">Filter() method </h1>
+<pre>
+When the callback function does not use the index and array parameters, they can be omitted.
+
+Array.filter() is supported in all browsers except Internet Explorer 8 or earlier.
+</pre>
+<script>
+var arr = [41,31,51,45,55,2,24,63];
+var odd = arr.filter(myodd);
+function myodd(value)
+{
+return (value%2==1);
+}
+document.write(odd + "<br>");
+var even = arr.filter(myeven);
+function myeven(value)
+{
+return (value%2==0);
+}
+document.write(even);
+</script>
+</body>
+</html>
+
