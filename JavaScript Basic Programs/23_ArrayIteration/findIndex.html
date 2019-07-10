@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> find() method</h1>
+<pre>
+The findIndex() method returns the index of the first array element that passes a test function.
+
+Note that the function takes 3 arguments:
+
+    The item value
+    The item index
+    The array itself
+
+Array.findIndex() is not supported in older browsers. The first browser versions with full support is listed below.
+
+Here, Finding first odd number of array
+</pre>
+<script>
+var arr = [24,54,41,31]; //to find out => 41
+var out = arr.findIndex(fun);
+function fun(value)
+{
+return (value%2==1);
+}
+document.write(out);
+</script>
+</body>
+</html>
