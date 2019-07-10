@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Array Sort </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Sorting Method </h1>
+<pre>
+Find the Highest (or Lowest) Array Value
+
+There are no built-in functions for finding the max or min value in an array.
+
+However, after you have sorted an array, you can use the index to obtain the highest and lowest values.
+
+When sorted in ascending order:
+
+Maximum Element: arr[arr.length-1]
+Minimum Element: arr[0]
+</pre>
+<script>
+var arr = [25,53,532,632,2146,34,12,674,4152];
+var arr = arr.sort(function(a,b){return a-b;});
+document.write("Max Element: " + arr[arr.length-1] + "<br>");
+document.write("Min Element: " + arr[0] + "<br>");
+</script>
+</body>
+</html>
