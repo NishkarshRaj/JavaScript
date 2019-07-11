@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Switch function </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Common Code Blocks</h1>
+<pre>
+Sometimes you will want different switch cases to use the same code.
+</pre>
+<script>
+switch(new Date().getDay())
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5: document.write("Week Days");
+break;
+case 0:
+case 6: document.write("Weekend");
+break;
+}
+</script>
+</body>
+</html>
