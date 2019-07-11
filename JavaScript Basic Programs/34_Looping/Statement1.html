@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Looping </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> For Loop Statement 1</h1>
+<pre>
+Statement 1
+
+Normally you will use statement 1 to initialize the variable used in the loop (i = 0).
+
+This is not always the case, JavaScript doesn't care. Statement 1 is optional.
+
+You can initiate many values in statement 1 (separated by comma):
+And you can omit statement 1 (like when your values are set before the loop starts):
+</pre>
+<script>
+var i,j,k;
+for(i=0,j=41,k=51;i<5;i++)
+{
+document.write(i + "<br>");
+}
+i = 5;
+for(;i<10;i++)
+{
+document.write(i + "<br>");
+}
+</script>
+</body>
+</html>
