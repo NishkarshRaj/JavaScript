@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Looping </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Statement 3</h1>
+<pre>
+Statement 3
+
+Often statement 3 increments the value of the initial variable.
+
+This is not always the case, JavaScript doesn't care, and statement 3 is optional.
+
+Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.
+
+Statement 3 can also be omitted (like when you increment your values inside the loop).
+<mark>
+Two cases arises:
+1) Write jump value within for loop
+2) Use break when no jump specified
+</mark>
+</pre>
+<script>
+//case1
+var i,k;
+for(i=0;i<5;)
+{
+i++;
+document.write(i + "<br>");
+}
+//case2
+k=0;
+for(i=0;true;)
+{
+k++;
+if(k==5)
+{
+break;
+}
+document.write("Hello World!!" + "<br>");
+}
+</script>
+</body>
+</html>
