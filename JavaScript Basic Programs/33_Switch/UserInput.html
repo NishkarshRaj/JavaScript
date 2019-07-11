@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> General Switch() Case</title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Switch User Input</h1>
+<h1>Option Menu: Calculator with two values 4 and 5 </h1>
+<h2> 1) Addition</h2>
+<h2> 2) Difference (Mod Value)</h2>
+<h2> 3) Multiplication</h2>
+<h2> 4) Division (5/4)</h2>
+<input id="el"/>
+<button onclick="nish()"> Submit </button>
+<script>
+function nish()
+{
+var val = Number(document.getElementById("el").value); //BCD!! HTML Returns string :(
+//document.write(val);
+switch(val)
+{
+case 1: document.write(4+5);
+break;
+case 2: document.write(Math.abs(4-5));
+break;
+case 3: document.write(4*5);
+break;
+case 4: document.write(5/4);
+break;
+default: document.write("Invalid Input");
+}
+}
+</script>
+</body>
+</html>
