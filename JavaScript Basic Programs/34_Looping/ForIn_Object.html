@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Looping </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> For in loop for Object traversal</h1>
+<pre>
+The JavaScript for/in statement loops through the properties of an object.
+</pre>
+<script>
+var obj = {name:"Nishkarsh Raj Khare",age:20,branch:"DevOps",sap:500060720,roll:"R171217041"};
+var x;
+var out = "";
+for(x in obj)
+{
+out = out + obj[x] + "<br>";
+}
+document.write(out);
+</script>
+</body>
+</html>
