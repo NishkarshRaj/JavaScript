@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Random Function for [min,max) </h1>
+<pre>
+A Proper Random Function
+This JavaScript function always returns a random number between min (included) and max (excluded).
+</pre>
+<script>
+document.write(fun(0,2));
+function fun(min,max)
+{
+return Math.floor(Math.random() * (max - min) ) + min;;
+}
+</script>
+</body>
+</html>
