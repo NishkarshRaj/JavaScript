@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Switch function </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Switch Function</h1>
+<pre>
+When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+This will stop the execution of inside the block.
+
+It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+Note: If you omit the break statement, the next case will be executed even if the evaluation does not match the case.
+
+</pre>
+<script>
+switch(new Date().getDay())
+{
+case 0: document.write("Sunday");
+case 1: document.write("Monday");
+case 2: document.write("Tuesday");
+case 3: document.write("Wednesday");
+case 4: document.write("Thursday");
+case 5: document.write("Friday");
+case 6: document.write("Saturday");
+}
+</script>
+</body>
+</html>
