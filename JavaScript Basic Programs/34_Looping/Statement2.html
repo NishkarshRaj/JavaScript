@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Looping </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Statement 2 of for loop</h1>
+<pre>
+Statement 2
+
+Often statement 2 is used to evaluate the condition of the initial variable.
+
+This is not always the case, JavaScript doesn't care. Statement 2 is also optional.
+
+If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.
+
+If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser.
+
+<mark>Three cases arises:
+1) Do not specify statement 2 => Infinite loop
+2) Specify true => Infinite Loop
+3) Specify false => Does not work even once</mark>
+</pre>
+<script>
+var i;
+//case 1
+for(i=0; ; i++)
+{
+if(i==5)
+{
+break;
+}
+document.write("Hello!!!!" + "<br>");
+}
+for(i=0;true; i++)
+{
+if(i==5)
+{
+break;
+}
+document.write("Hello!!!!" + "<br>");
+}
+for(i=0;false; i++)
+{
+document.write("Working>>>>" + "<br>");
+}
+</script>
+</body>
+</html>
