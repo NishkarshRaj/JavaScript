@@ -1,0 +1,56 @@
+body
+{
+background-color:navy;
+background-image: url("SiB.jpg");
+background-repeat: no-repeat;
+background-position: right;
+background-attachment: fixed;
+margin-top:40px;
+}
+h1
+{
+background-color: black;
+color: white;
+border: 2px solid black;
+margin: auto;
+width:430px;
+text-align:center;
+}
+h2#user
+{
+background-color: blue;
+color: white;
+border: 2px solid black;
+margin: auto;
+width:115px;
+text-align:center;
+padding: 5px;
+outline: 2px solid white;
+}
+h2#pass
+{
+background-color: blue;
+color: white;
+border: 2px solid black;
+margin: auto;
+width:110px;
+text-align:center;
+padding: 5px;
+outline: 2px solid white;
+}
+/* To shift button and input to center*/
+button
+{
+margin:auto;
+display:block;
+font-size:125%;
+}
+input
+{
+margin:auto;
+display:block;
+}
+/*To center align a Heading/Paragraph with width, use
+1) margin auto
+2) Specify width: hit and trial
+3) text align center*/
