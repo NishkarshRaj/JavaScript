@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Boolean Expressions </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Boolean Results in JavaScript </h1>
+<pre>
+A JavaScript Boolean represents one of two values: true or false.
+Boolean Values
+
+Very often, in programming, you will need a data type that can only have one of two values, like
+
+    YES / NO
+    ON / OFF
+    TRUE / FALSE
+
+For this, JavaScript has a Boolean data type. It can only take the values true or false.
+You can use the Boolean() function to find out if an expression (or a variable) is true
+
+<mark>As the last two examples suggest, simple comparisions also results in result 
+But if a comparision is made with the concatenated string without braces() it gives wrong results. </mark>
+</pre>
+<script>
+document.write(Boolean(41>0) + "<br>");
+document.write((41>31) + "<br>");
+//document.write(41>31 + "<br>");
+document.write(41>31);
+</script>
+</body>
+</html>
