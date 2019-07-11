@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Boolean </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Boolean Object versus Boolean Literal</h1>
+<pre>
+Booleans Can be Objects
+
+Normally JavaScript booleans are primitive values created from literals:
+
+var x = false;
+
+But booleans can also be defined as objects with the keyword new:
+
+var y = new Boolean(false);
+
+Do not create Boolean objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected results:
+
+When using the == operator, equal booleans are equal
+When using the === operator, equal booleans are not equal, because the === operator expects equality in both type and value.
+</pre>
+<script>
+var b1 = true;
+var b2 = new Boolean(true);
+document.write((b1==b2) + "<br>" + (b1===b2))
+</script>
+</body>
+</html>
