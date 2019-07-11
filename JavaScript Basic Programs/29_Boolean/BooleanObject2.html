@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Boolean </title>
+<meta charset="UTF-8">
+</head>
+<body style="background-color:lightblue;">
+<h1 style="text-align:center"> Boolean Object versus Boolean Objects</h1>
+<pre>
+Objects cannot be comparedNote the difference between (x==y) and (x===y).
+Comparing two JavaScript objects will always return false.
+</pre>
+<script>
+var b1 = new Boolean(true);
+var b2 = new Boolean(true);
+document.write((b1==b2) + "<br>" + (b1===b2))
+</script>
+</body>
+</html>
