@@ -4,8 +4,6 @@ Client Side Scripting in JavaScript
 
 # How to Contribute
 
-# How to Collaborate:
-
 1. Fork the repository to your own GitHub account.
 
 2. Clone the repository to your local machine
